@@ -29,3 +29,63 @@
     margin-top: 1rem;
     font-weight: bold;
 }
+nav ul{
+    background-color: #333;
+    color: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1em;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+nav ul li a:hover{
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.monument-img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+.monument-img:hover{
+    transform: scale(1.05);
+}
+.article p{
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0.5rem 0 1rem;
+}
+.article a{
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.article a::after{
+content: "";
+display: block;
+width: 0;
+height: 2px;
+background: #0077cc;
+transition: width 0.3s;
+position: absolute;
+bottom: -2px;
+left: 0;
+}
+.article a:hover::after{
+    width: 100%;
+}
+.article a:hover{
+    color: #005fa3;
+}
