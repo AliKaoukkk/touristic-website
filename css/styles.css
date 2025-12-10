@@ -104,3 +104,10 @@ background-image: url('/Users/alikaouk/Desktop/touristic-website/images/najaf.jp
     padding: 2rem;
     color: #fff;
 }
+.pepsi{
+  background: linear-gradient(to right, #bdc3c7, #9b59b6);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
