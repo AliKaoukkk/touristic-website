@@ -111,3 +111,10 @@ background-image: url('/Users/alikaouk/Desktop/touristic-website/images/najaf.jp
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
 }
+.back-link{
+    text-decoration: none;
+    color: blue;
+}
+.back-link:hover{
+    color: purple
+}
