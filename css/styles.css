@@ -122,7 +122,7 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .sevenup{
-background-image: url('/Users/alikaouk/Desktop/touristic-website/images/najaf.jpeg');
+background-image: url('../images/najaf.jpeg');
     background-size: cover;    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -172,10 +172,13 @@ article img{
 .extra-images img:hover{
     transform: scale(1.05);
 }
+
 .color1{
-    font-size: x-large;
-    color:wheat;
-    font-style: italic;
+   background-color: rgba(0,0,0,0.3);
+   color: wheat;
+   padding: 0.5rem 1rem;
+   border-radius: 5px;
+
 }
 .fanta {
     background: linear-gradient(to right, #bdc3c7, #9b59b6);
@@ -237,7 +240,7 @@ article img{
 
 }
 .miranda{
-    background-image: url('/Users/alikaouk/Desktop/touristic-website/images/shushtargal.jpg');
+    background-image: url('../images/shushtargal.jpg');
     background-size: cover;    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
