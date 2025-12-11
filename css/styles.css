@@ -236,3 +236,11 @@ article img{
     transform: scale(1.05);
 
 }
+.miranda{
+    background-image: url('/Users/alikaouk/Desktop/touristic-website/images/shushtargal.jpg');
+    background-size: cover;    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    color: #fff;
+}
