@@ -29,24 +29,32 @@
     margin-top: 1rem;
     font-weight: bold;
 }
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 nav ul{
-    background-color: #333;
-    color: #fff;
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+    background: rgba(255,255,255,0.45);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 nav ul li a{
-    color: #fff;
+    color: #1f2933;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 500;
 }
 nav ul li a:hover{
-    background-color: #555;
-    border-radius: 4px;
+    background: rgba(0,0,0,0.06);
 }
 
 .monument-img{
@@ -123,7 +131,7 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .sevenup{
-    background-color: #333;
+    background-color: whitesmoke;
     background-size: cover;    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -131,18 +139,25 @@ h1{
     color: #fff;
 }
 .pepsi{
-  background: linear-gradient(to right, #bdc3c7, #9b59b6);
+  background: linear-gradient(to right, #728ea0, rgb(203, 160, 133));
   min-height: 100vh;
   margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #fff;
 }
 .back-link{
+    display: inline-block;
     text-decoration: none;
-    color: blue;
+    background-color: #0077cc;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
 }
 .back-link:hover{
-    color: purple
+    background-color: #005fa3;
+    transform: translate(-2px);
 }
 article img{
     max-width: 40%;
@@ -153,9 +168,16 @@ article img{
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 .main-img{
-    width: 80%;
+    width: 30%;
+    max-width: 600px;
     margin: 2rem auto;
     display: block;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+.main-img:hover{
+    transform: scale(1.05);
 }
 .extra-images{
     display: flex;
@@ -173,7 +195,14 @@ article img{
 .extra-images img:hover{
     transform: scale(1.05);
 }
-
+.description p{
+    background-color: rgba(255,255,255,0.8);
+    color: #111;
+    padding: 1rem;
+    border-radius: 10px;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
 .color1{
    background-color: rgba(0,0,0,0.3);
    color: wheat;
@@ -250,8 +279,8 @@ article img{
 }
 .item{
     flex: 1;
-    overflow: hidden;
     border-radius: 10px;
+    z-index: 1;
 }
 
 .item img{
@@ -259,10 +288,14 @@ article img{
     height: 130px;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.item:hover{
+    z-index: 50;
 }
 .item img:hover{
-    transform: scale(1.1);
+    transform: scale(1.9);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
 }
 .monument-row{
     margin-bottom: 40px;
@@ -274,4 +307,22 @@ article img{
     display: flex;
     gap: 20px;
     padding: 0 20px;
+}
+footer{
+color: black;
+}
+.facts ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.facts li{
+    background-color: rgba(0,0,0,0.2);
+    margin-bottom: 0.75rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
 }
