@@ -28,3 +28,18 @@ form.addEventListener('submit', function(e) {
         form.reset();
     }
 });
+
+
+
+
+document.querySelectorAll('.row').forEach(row =>{
+    const container = row.querySelector('.row-container');
+    const left = row.querySelector('.arrow.left');
+    const right = row.querySelector('.arrow.right');
+    right.addEventListener('click', () => {
+        container.scrollLeft +=300;
+    })
+    left.addEventListener('click', () =>{
+        container.scrollLeft -=300;
+    });
+});

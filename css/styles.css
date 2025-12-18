@@ -36,6 +36,7 @@ nav ul{
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: center;
     gap: 1em;
 }
 nav ul li a{
@@ -122,7 +123,7 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .sevenup{
-background-image: url('../images/najaf.jpeg');
+    background-color: #333;
     background-size: cover;    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -240,10 +241,37 @@ article img{
 
 }
 .miranda{
-    background-image: url('../images/shushtargal.jpg');
+    background-color: #333;
     background-size: cover;    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 2rem;
     color: #fff;
+}
+.item{
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.item img{
+    width: 220px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.item img:hover{
+    transform: scale(1.1);
+}
+.monument-row{
+    margin-bottom: 40px;
+}
+.monument-row h2{
+    margin 10px 20px;
+}
+.row-container{
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
 }
