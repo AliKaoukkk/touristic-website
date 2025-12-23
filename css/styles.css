@@ -41,16 +41,16 @@ nav ul{
     list-style: none;
     margin: 0;
     padding: 1rem 0;
-    background: rgba(255,255,255,0.45);
+    background: #f2f5b0;
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 nav ul li a{
-    color: #1f2933;
+    color: rgb(6, 47, 6);
     text-decoration: none;
     padding: 0.5rem 0.75rem;
     border-radius: 8px;
-    transition: background 0.2s, color 0.2s;
+    transition: 0.2s, color 0.2s;
     font-weight: 500;
 }
 nav ul li a:hover{
@@ -81,8 +81,8 @@ nav ul li a:hover{
 
 }
 .article1 {
-    color: #222;
-    background-color: linear-gradient(to right, #bdc3c7, #9b59b6);
+    color: rgb(6, 47, 6);
+    background-color: #f2f5b0;
     padding: 2.5rem;
     width: auto;               
     border-radius: 2rem;
@@ -125,7 +125,7 @@ left: 0;
 }
 h1{
     font-size: 2.5rem;
-    color: #222;
+    color: #f2f5b0;
     text-align: center;
     margin: 1rem 0 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -139,24 +139,24 @@ h1{
     color: #fff;
 }
 .pepsi{
-  background: linear-gradient(to right, #728ea0, rgb(203, 160, 133));
+  background-color: rgb(6, 47, 6);
   min-height: 100vh;
   margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #fff;
+  color: #f2f5b0;
 }
 .back-link{
     display: inline-block;
     text-decoration: none;
-    background-color: #0077cc;
-    color: white;
+    background-color: #cfee7e;
+    color: rgb(6, 47, 6);
     padding: 0.5rem 1rem;
     border-radius: 6px;
-    transition: background 0.3s, transform 0.2s;
+    transition:bg 0.3s, transform 0.2s;
     font-weight: bold;
 }
 .back-link:hover{
-    background-color: #005fa3;
+    background-color: rgba(2, 56, 2, 0.489);
     transform: translate(-2px);
 }
 article img{
@@ -168,13 +168,15 @@ article img{
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 .main-img{
-    width: 30%;
-    max-width: 600px;
-    margin: 2rem auto;
-    display: block;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
+    width: auto;
+    max-width: 600px;
+    margin-left: auto;
+    height: auto;
+    
+  
 }
 .main-img:hover{
     transform: scale(1.05);
@@ -195,13 +197,19 @@ article img{
 .extra-images img:hover{
     transform: scale(1.05);
 }
+.description{
+    width: 50%;
+}
 .description p{
-    background-color: rgba(255,255,255,0.8);
-    color: #111;
-    padding: 1rem;
-    border-radius: 10px;
-    line-height: 1.7;
+   
     margin-bottom: 1.5rem;
+    width: 50%;
+    background-color: #e6eaa0;
+    width: auto;
+    color: rgb(6, 47, 6);
+    padding: 1.5rem;
+    border-radius: 12px;
+    line-height: 1.7;
 }
 .color1{
    background-color: rgba(0,0,0,0.3);
@@ -211,19 +219,23 @@ article img{
 
 }
 .fanta {
-    background: linear-gradient(to right, #bdc3c7, #9b59b6);
+    background:rgb(6, 47, 6) ;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
 }
 .about-project {
-    background-color: linear-gradient(to right, #bdc3c7, #9b59b6);
-    padding: 3rem;
+    background-color:  #f2f5b0;
+    color: rgb(6, 47, 6);
+    padding: 4rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border-radius: 3.5rem;
      box-shadow: 0 1rem 2rem black;
 }
 .about-project h2 {
+    color: rgb(6, 47, 6);
     margin-bottom: 1rem;
     font-size: 2rem;
 }
@@ -270,13 +282,33 @@ article img{
 
 }
 .miranda{
-    background-color: #333;
-    background-size: cover;    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 2rem;
-    color: #fff;
+  color: rgb(6, 47, 6);
+  height: 100vh;
+  padding: 40px;
+  background-color: #f2f5b0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  
 }
+.miranda h1{
+    text-align: center;
+  color: rgb(6, 47, 6);
+  margin-bottom: 2rem;
+    
+}
+.miranda .content {
+  display: flex;               
+  justify-content: space-between;
+  align-items: flex-start;     
+  width: 100vw;                 
+  max-width: 100%;           
+  gap: 2rem;                   
+  box-sizing: border-box;      
+  flex-direction: row-reverse;     
+}
+
 .item{
     flex: 1;
     border-radius: 10px;
@@ -294,30 +326,29 @@ article img{
     z-index: 50;
 }
 .item img:hover{
-    transform: scale(1.9);
+    transform: scale(1.2);
     box-shadow: 0 20px 40px rgba(0,0,0,0.35);
 }
 .monument-row{
+    color: #f2f5b0;
     margin-bottom: 40px;
 }
 .monument-row h2{
-    margin 10px 20px;
+    margin: 10px 20px;
 }
 .row-container{
     display: flex;
     gap: 20px;
     padding: 0 20px;
 }
-footer{
-color: black;
-}
+
 .facts ul{
     list-style: none;
     padding: 0;
     margin: 0;
 }
 .facts li{
-    background-color: rgba(0,0,0,0.2);
+    background-color:#e0e49a ;
     margin-bottom: 0.75rem;
     padding: 0.5rem 1rem;
     border-radius: 6px;
@@ -325,4 +356,7 @@ color: black;
     display: flex;
     gap: 0.5rem;
     align-items: center;
+}
+.foot {
+    color: #f2f5b0;
 }
